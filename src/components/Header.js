@@ -5,8 +5,7 @@ import Link from 'next/link';
 const Header = () => {
 return (
     <>
-        <nav className="p-3 bg-primary">
-        <div className="flex space-x-4">
+        <nav className="p-3 bg-primary font-serif text-highlight mx-4 rounded-xl flex justify-evenly">
             <Link 
             href="/">
                 Home
@@ -23,7 +22,6 @@ return (
             <Link href="/contact">
                 Contact
             </Link>
-        </div>
     </nav>
     </>
     
