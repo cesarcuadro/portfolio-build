@@ -13,11 +13,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-secondary">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          <h1 className='text-4xl'>Cesar's Portfolio</h1>
-          <h2>Welcome to my portfolio.</h2>
-          <Link href="/about-me">About me</Link>
+      <main className="m-10 flex w-8/9 flex-row justify-between rounded-xl bg-highlight p-20">
+        <div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <h1 className='text-4xl'>Cesar's Portfolio</h1>
+            <h2 className="text-2xl">Welcome to my portfolio.</h2>
+            <p className="pt-10">test</p>
+          </div>
+          <div className="relative w-500 m-10 font-serif">
+          <Link href="/projects">My Favorite Projects:</Link>
+          </div>
       </main>
     </>
   )

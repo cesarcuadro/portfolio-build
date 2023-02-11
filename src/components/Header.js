@@ -8,18 +8,16 @@ return (
         <nav className="p-3 bg-primary">
         <div className="flex space-x-4">
             <Link 
-            href="/"
-            className='red'
-            >
+            href="/">
                 Home
             </Link>
             <Link href="/about-me">
                 About Me
             </Link>
-            <Link href="/contact">
+            <Link href="/projects">
                 Projects
             </Link>
-            <Link href="/contact">
+            <Link href="/resume">
                 Resume
             </Link>
             <Link href="/contact">
