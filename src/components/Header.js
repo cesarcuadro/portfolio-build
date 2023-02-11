@@ -1,31 +1,28 @@
-import React from 'react'
-import Link from 'next/link';
-
+import React from 'react';
+import ActiveLink from './ActiveLink';
 
 const Header = () => {
-return (
+  return (
     <>
-        <nav className="p-3 bg-primary font-serif text-highlight mx-4 rounded-xl flex justify-evenly">
-            <Link 
-            href="/">
-                Home
-            </Link>
-            <Link href="/about-me">
-                About Me
-            </Link>
-            <Link href="/projects">
-                Projects
-            </Link>
-            <Link href="/resume">
-                Resume
-            </Link>
-            <Link href="/contact">
-                Contact
-            </Link>
-    </nav>
+      <nav className="p-3 bg-primary font-serif text-highlight mx-4 rounded-xl flex justify-evenly">
+        <ActiveLink href="/" >
+          Home
+        </ActiveLink>
+        <ActiveLink href="/about-me">
+          About Me
+        </ActiveLink>
+        <ActiveLink href="/projects">
+          Projects
+        </ActiveLink>
+        <ActiveLink href="/resume">
+          Resume
+        </ActiveLink>
+        <ActiveLink href="/contact">
+          Contact
+        </ActiveLink>
+      </nav>
     </>
-    
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
