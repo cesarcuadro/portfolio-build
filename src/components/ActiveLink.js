@@ -31,7 +31,9 @@ const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
         margin: 16,
         padding: 0,
         fontWeight: isCurrentPath ? 'bold' : 'normal', // I left mine all bold
-        border: isCurrentPath ? '1px solid #000' : 'none',
+        border: isCurrentPath ? '3px solid #1864ab' : 'none',
+        borderRadius: '25px',
+        borderWidth: '3px',
         fontSize: 17,
         color: isLeftSideBar ? '#e65100' : '#ffeb3b',
       }}>
