@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+// import Image from 'next/image'
+// import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,7 +15,7 @@ export default function Home() {
       </Head>
       <main className="bg-secondary">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          <h1 className='text-4xl'>Hi! I'm Renita!</h1>
+          <h1 className='text-4xl'>Cesar's Portfolio</h1>
           <h2>Welcome to my portfolio.</h2>
           <Link href="/about-me">About me</Link>
       </main>
