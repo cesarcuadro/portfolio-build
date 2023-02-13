@@ -3,17 +3,19 @@ import ActiveLink from './ActiveLink';
 
 const Header = () => {
   return (
-    <div style={{display: 'flex' ,justifyContent: 'center'}}>
-      <nav  style={{
-        boxShadow: '2px 5px 25px gray',
-        background: 'white',
-        padding: 20,
-        color: 'navy',
-        fontWeight: 'bolder',
-        border: '3px solid navy',
-        width: '97%',
-        marginTop: 10,
-        borderRadius: 10
+    <div className='flex justify-center'>
+      <nav  
+        className='shadow-md shadow-black bg-red-500 w-11/12'
+        style={{
+        // boxShadow: '2px 5px 25px gray', ✅
+        // background: 'white', ✅
+        // padding: 20,
+        // color: 'navy',
+        // fontWeight: 'bolder',
+        // border: '3px solid',
+        // width: '97%', ✅
+        // marginTop: 10,
+        // borderRadius: 10
       }}>
         <ActiveLink href="/" >
           Home
