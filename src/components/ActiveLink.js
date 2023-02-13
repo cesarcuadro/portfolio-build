@@ -27,22 +27,8 @@ const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
     <Link
       href={href}
       onClick={handleClick}
-      style={{
-        textDecoration: 'none',
-        margin: 16,
-        padding: 10,
-        fontWeight: isCurrentPath ? 'bold' : 'normal', // I left mine all bold
-        border: isCurrentPath ? '3px solid navy' : 'none',
-        borderRadius: '25px',
-        borderWidth: '3px',
-        fontSize: 17,
-        fontFamily: 'fantasy',
-        textShadow: isCurrentPath ? 'none' : '2px 2px 2px gray',
-        background: isCurrentPath ? 'yellow' : 'white', // I left mine all bold
-        boxShadow: isCurrentPath ? '2px 2px 7px navy' : 'none', // I left mine all bold
-
-        // color: isLeftSideBar ? '#e65100' : '#ffeb3b',
-      }}>
+      className={`font-mono m-7 p-2.5 ${isCurrentPath ? 'bg-blue-500 shadow-md shadow-black border-solid border-black border-2 rounded-full' : '' }`}
+      >
       {children}
     </Link>
   );

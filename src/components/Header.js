@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='flex justify-center'>
       <nav  
-        className='shadow-md shadow-black bg-gradient-to-r from-red-500 to-red-100 w-11/12 flex justify-between mt-2 rounded-lg'>
+        className='shadow-md shadow-black bg-gradient-to-r from-slate-900 via-slate-400 to-slate-900 w-11/12 flex justify-between mt-5 rounded-lg'>
         <ActiveLink href="/" >
           Home
         </ActiveLink>
