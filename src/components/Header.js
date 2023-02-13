@@ -5,18 +5,7 @@ const Header = () => {
   return (
     <div className='flex justify-center'>
       <nav  
-        className='shadow-md shadow-black bg-red-500 w-11/12'
-        style={{
-        // boxShadow: '2px 5px 25px gray', ✅
-        // background: 'white', ✅
-        // padding: 20,
-        // color: 'navy',
-        // fontWeight: 'bolder',
-        // border: '3px solid',
-        // width: '97%', ✅
-        // marginTop: 10,
-        // borderRadius: 10
-      }}>
+        className='shadow-md shadow-black bg-gradient-to-r from-red-500 to-red-100 w-11/12 flex justify-between mt-2 rounded-lg'>
         <ActiveLink href="/" >
           Home
         </ActiveLink>
