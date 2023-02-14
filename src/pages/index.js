@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link';
-// import Image from 'next/image'
-// import styles from '@/styles/Home.module.css'
+import Image from "next/image";
+import project from 'public/project.png'
+
 
 
 export default function Home() {
@@ -13,15 +14,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="m-10 flex w-8/9 flex-row justify-between rounded-xl bg-highlight p-20">
+      <main className="m-10 flex w-8/9 flex-col justify-between rounded-xl bg-highlight p-20">
         <div>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             <h1 className='text-4xl'>Cesar's Portfolio</h1>
             <h2 className="text-2xl">Welcome to my portfolio.</h2>
-            <p className="pt-10">test</p>
+            <p className="pt-10">Duis dolore ipsum enim ex magna ipsum sunt voluptate amet aliquip elit aliqua. Ipsum labore velit aute incididunt dolor duis esse. Veniam velit in consectetur proident esse duis nisi voluptate eiusmod.</p>
           </div>
+
           <div className="relative w-500 m-10 font-serif">
           <Link href="/projects">My Favorite Projects:</Link>
+          <Image
+            src={project}
+            alt="preview of project"
+            />
           </div>
       </main>
     </>
