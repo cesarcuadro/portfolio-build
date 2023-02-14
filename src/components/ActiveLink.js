@@ -24,13 +24,18 @@ const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
   const color = isCurrentPath ? theme : '';
 
   return (
+    <div className='m-3'>
     <Link
       href={href}
       onClick={handleClick}
-      className={`font-mono m-7 p-2.5 ${isCurrentPath ? 'bg-blue-500 shadow-md shadow-black border-solid border-black border-2 rounded-full' : '' }`}
+      className={`ml-20 px-2 font-serif text-2xl text-white py-1
+      ${isCurrentPath 
+        ? 'bg-slate-300 shadow-md shadow-black border-solid border-black border-2 rounded-full text-black'
+        : '' }`}
       >
       {children}
     </Link>
+    </div>
   );
 };
 
