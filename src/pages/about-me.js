@@ -4,21 +4,46 @@ import project from "public/project.png";
 export default function AboutMe() {
   return (
     <div>
-      <section>
-        <Image src={project} alt="placeholder for professional picture" />
+      <div>
+        <Image src={project} alt="" className="rounded-full w-16 m-2"/>
+      </div>
+      <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
+        <h3 className="text-xl">Technical Skills</h3>
+        <div>List of skills and/or icons</div>
       </section>
-      <section>
-        <h3>Tech Skills</h3>
-        <p>skill 1</p>
-      </section>
-      <section>
-        <p>
-          Ea anim Lorem veniam velit anim Lorem nisi id incididunt. Pariatur
-          fugiat eu occaecat dolor occaecat. Aliquip eu pariatur adipisicing
-          reprehenderit labore reprehenderit cupidatat culpa minim mollit
-          laboris duis. Minim ipsum consequat quis id magna veniam ea.
-        </p>
+      <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
+      <h1>My story:</h1>
+       <p> Here is a summary of my background and general vibe.</p>
+       <h2>Transferrable Skills:</h2>
+       <p> Here is a summary of my transferrable skills</p>
       </section>
     </div>
   );
 }
+
+/*
+import Image from "next/image";
+import Link from "next/link";
+import profile from "public/profile.jpg"
+import { motion } from "framer-motion";
+
+export default function AboutMe() {
+  return (
+    <div>
+      <div>
+        <Image src={profile} alt="" className="rounded-full w-16 m-2"/>
+      </div>
+      <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
+        <h3 className="text-xl">Technical Skills</h3>
+        <div>List of skills and/or icons</div>
+      </section>
+      <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
+      <h1>My story:</h1>
+       <p> Here is a summary of my background and general vibe.</p>
+       <h2>Transferrable Skills:</h2>
+       <p> Here is a summary of my transferrable skills</p>
+      </section>
+    </div>
+  );
+}
+*/

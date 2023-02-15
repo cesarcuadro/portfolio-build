@@ -1,24 +1,59 @@
 import React, { useState } from "react";
+import Image from "next/image";
+import projectData from "../data/projectData.js";
 
 const Projects = () => {
-  const [toggle, setToggle] = useState("");
-  const handleChange = (e) => {
-    setToggle(e.target.value);
+  const [project, setProject] = useState("");
+  const [menu, setMenu] = useState("collapse");
+  const handleClick = (id) => {
+    setProject(projectData[id-1]);
+    handleMenu()
   };
+
+  const handleMenu = () => {
+    if (menu === "collapse") {
+      setMenu("visible")
+    } else if (menu === "visible") {
+      setMenu("collapse")
+    }
+    console.log(menu)
+  } 
+console.log(project)
   return (
-    <div>
-      <section>
-        <label for="projects">Choose a project:</label>
-        <select name="projects" id="projects" onChange={handleChange}>
-          <option value="1">Project 1</option>
-          <option value="2">Project 2</option>
-          <option value="3">Project 3</option>
-        </select>
-      </section>
-      <section>
-        <div>{toggle}</div>
-      </section>
-    </div>
+    <section className="m-2 font-serif ">
+      <h1 className="text-xl">My projects</h1>
+      <button onClick={handleMenu}>Choose:</button>
+
+      <div className={`flex flex-col ${menu}`}>
+      {projectData?.map((project, index) => {
+        return <button key={index}  onClick={() => handleClick(project.id)}>
+          <div className="">
+          {project.title}
+          </div>
+          </button>;
+          
+      })}
+      </div>
+
+      <div className="flex justify-evenly">
+      {projectData.map((project, index) => {
+        return (
+          <div key={index} className="">
+            <Image src={project.image} alt="pic" className="w-16" />
+          </div>
+        );
+      })}
+      </div>
+
+      <div>
+      {project?.title}
+      </div>
+      <div>{project?.description}</div>
+      <div>
+      {project?.image && <Image src={project.image} alt="project preview" />}
+      </div>
+
+    </section>
   );
 };
 
