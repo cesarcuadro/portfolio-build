@@ -31,7 +31,7 @@ export const MessageForm = () => {
         <h3>{formSubmitted.title}</h3>
         <p>{formSubmitted.paragraph}</p>
     </div>
-    <form className="border-2 border-black" ref={form} onSubmit={sendEmail}>
+    <form className="border-2 border-black flex flex-col" ref={form} onSubmit={sendEmail}>
       <label className="border-2 border-black">Name</label>
       <input className="border-2 border-black" type="text" name="user_name" />
       <label className="border-2 border-black">Email</label>
