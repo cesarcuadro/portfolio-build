@@ -4,9 +4,10 @@ import project from "public/project.png";
 export default function AboutMe() {
   return (
     <div>
-      <div>
-        <Image src={project} alt="" className="rounded-full w-16 m-2"/>
+      <div className="flex justify-center">
+        <Image src={project} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-black"/>
       </div>
+      
       <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
         <h3 className="text-xl">Technical Skills</h3>
         <div>List of skills and/or icons</div>

@@ -1,9 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
-import project from 'public/project.png'
-
-
+import project from "public/project.png";
 
 export default function Home() {
   return (
@@ -14,22 +12,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="m-10 flex w-8/9 flex-col justify-between rounded-xl bg-highlight p-20">
+      <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl p-20">
         <div>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <h1 className='text-4xl'>Cesar's Portfolio</h1>
-            <h2 className="text-2xl">Welcome to my portfolio.</h2>
-            <p className="pt-10">Duis dolore ipsum enim ex magna ipsum sunt voluptate amet aliquip elit aliqua. Ipsum labore velit aute incididunt dolor duis esse. Veniam velit in consectetur proident esse duis nisi voluptate eiusmod.</p>
-          </div>
+          <h1 className="text-4xl">Welcome to Cesar's Portfolio</h1>
+          <p className="pt-10">
+          Full stack web developer with strong analytical and communication skills. Dedicated to discovering, developing, and implementing creative solutions to complex web application challenges. Extensive experience in troubleshooting steps from current role as a ground radio maintainer in the Marine Corps Reserves.
+          </p>
+        </div>
 
-          <div className="relative w-500 m-10 font-serif">
-          <Link href="/projects">My Favorite Projects:</Link>
-          <Image
-            src={project}
-            alt="preview of project"
-            />
-          </div>
+        <div className="w-500 relative m-10 font-serif border-2 border-black rounded-lg pb-3 shadow-xl flex flex-col">
+          <Link href="/projects" className="text-center">My Favorite Projects:</Link>
+          <Image src={project} alt="preview of project" />
+        </div>
       </main>
     </>
-  )
+  );
 }
