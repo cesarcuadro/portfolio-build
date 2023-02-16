@@ -21,8 +21,9 @@ export default function Home() {
         </div>
 
         <div className="w-500 relative m-10 font-serif border-2 border-black rounded-lg pb-3 shadow-xl flex flex-col">
-          <Link href="/projects" className="text-center">My Favorite Projects:</Link>
+          <Link href="https://github.com/cesarcuadro/Apartment-App" className="text-center">My Favorite Projects:
           <Image src={project} alt="preview of project" />
+          </Link>
         </div>
       </main>
     </>
