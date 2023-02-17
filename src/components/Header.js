@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ActiveLink from "./ActiveLink";
-import burger from "public/burger.png";
-import close from "public/x.png";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [buttonMenu, setButtonMenu] = useState("invisible");
@@ -50,9 +49,9 @@ const Header = () => {
         onClick={handleClick}
       >
         {buttonMenu === "invisible" ? (
-          <Image src={burger} alt="burger" className="w-8" />
+          <FontAwesomeIcon icon={faBars} className="w-8"/>
         ) : buttonMenu === "visible" ? (
-          <Image src={close} alt="x button" className="w-8" />
+          <FontAwesomeIcon icon={faX} className="w-8"/>
         ) : null}
       </button>
     </div>
