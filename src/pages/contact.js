@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <main>
+    <main className="flex flex-wrap flex-col content-center">
       <div className="flex flex-row text-xl space-x-4">
         <div>
           <a
@@ -14,7 +14,8 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            &nbsp;
+            <FontAwesomeIcon icon={faLinkedin} /> &nbsp;
             LinkedIn
           </a>
         </div>
@@ -24,7 +25,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} /> &nbsp;
           GitHub
           </a>
         </div>
@@ -34,7 +35,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon icon={faEnvelope} /> &nbsp;
           Email
           </a>
         </div>

@@ -13,13 +13,13 @@ import { faGem } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutMe() {
   return (
-    <div className="space-y-4">
+    <div className="flex flex-col gap-1">
       <div className="flex justify-center">
         <Image src={portrait} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-purple-700"/>
       </div>
       
       
-      <section className="border-2 border-purple-700 shadow-xl m-2 rounded-xl p-2 space-y-1">
+      <section className="border-2 border-purple-700 shadow-xl m-2 rounded-xl p-2 space-y-1 bg-slate-400">
         <h3 className="text-xl text-center">Technical Skills</h3>
         <div className="flex justify-evenly">
           <FontAwesomeIcon icon={faReact} />
@@ -32,7 +32,7 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className="border-2 border-purple-700 shadow-xl m-2 rounded-xl p-2 object-center">
+      <section className="border-2 border-purple-700 shadow-xl m-2 rounded-xl p-2 object-center bg-slate-400">
       <h1 className="font-bold text-m">My story:</h1>
        <p> Full stack web developer with strong analytical and communication skills. Dedicated to discovering, developing, and implementing creative solutions to complex web application challenges. Extensive experience in troubleshooting steps from current role as a ground radio maintainer in the Marine Corps Reserves.</p>
        <h2 className="font-bold text-m">Transferrable Skills:</h2>
