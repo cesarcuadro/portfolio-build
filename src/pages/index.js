@@ -16,7 +16,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl">Welcome to Cesar's Portfolio</h1>
           <p className="pt-10">
-          Full stack web developer with strong analytical and communication skills. Dedicated to discovering, developing, and implementing creative solutions to complex web application challenges. Extensive experience in troubleshooting steps from current role as a ground radio maintainer in the Marine Corps Reserves.
+          Experienced full stack web developer with strong problem-solving and communication skills, skilled in troubleshooting from previous role as a ground radio maintainer in the Marine Corps Reserves.
           </p>
         </div>
 

@@ -32,7 +32,7 @@ export default function AboutMe() {
       </section>
       <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
       <h1>My story:</h1>
-       <p> Here is a summary of my background and general vibe.</p>
+       <p> Full stack web developer with strong analytical and communication skills. Dedicated to discovering, developing, and implementing creative solutions to complex web application challenges. Extensive experience in troubleshooting steps from current role as a ground radio maintainer in the Marine Corps Reserves.</p>
        <h2>Transferrable Skills:</h2>
        <p> Here is a summary of my transferrable skills</p>
       </section>
