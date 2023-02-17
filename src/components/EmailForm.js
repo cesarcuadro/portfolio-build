@@ -53,17 +53,17 @@ export const MessageForm = () => {
         <p>{formSubmitted.paragraph}</p>
       </div>
       <form
-        className="flex flex-col border-2 border-black w-11/12 place-content-center"
+        className="flex flex-col border-2 border-black w-11/12 place-content-center ml-4"
         ref={form}
         onSubmit={sendEmail}
       >
         <label className="border-1 border-black">Name</label>
         <input className="w-full bg-gray-200 mb-1 pl-0.5 dark:text-black" placeholder="Name" type="text" name="name" />
         <label className="border-1 border-black">Email</label>
-        <input className="border-1 border-black" type="email" name="email" />
+        <input className="w-full bg-gray-200 mb-1 pl-0.5 dark:text-black" placeholder="email@email.com" type="email" name="email" />
         <label className="border-1 border-black">Message</label>
-        <textarea className="border-1 border-black" name="message" />
-        <input className="border-1 border-black" type="submit" value="Send" />
+        <textarea className="w-full bg-gray-200 mb-1 pl-0.5 dark:text-black" placeholder="Type your message here" name="message" />
+        <input className="border-2 border-black" type="submit" value="Send" />
       </form>
     </>
   );

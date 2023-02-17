@@ -3,7 +3,7 @@ import Header from "./Header";
 export default function Layout({ children }) {
   return (
     <>
-      <div className="font-mono">
+      <div className="font-serif">
         <Header />
         <main>{children}</main>
       </div>
