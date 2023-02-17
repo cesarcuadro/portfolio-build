@@ -18,7 +18,7 @@ export default function AboutMe() {
         <Image src={project} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-black"/>
       </div>
       
-      <section className="border-2 border-black m-2 rounded-xl p-2 object-center">
+      <section className="border-2 border-black m-2 rounded-xl p-2">
         <h3 className="text-xl">Technical Skills</h3>
         <div className="flex justify-evenly">
           <FontAwesomeIcon icon={faReact} />

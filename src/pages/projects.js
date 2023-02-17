@@ -35,16 +35,6 @@ console.log(project)
       })}
       </div>
 
-      <div className="flex justify-evenly">
-      {projectData.map((project, index) => {
-        return (
-          <div key={index} className="">
-            <Image src={project.image} alt="pic" className="w-16" />
-          </div>
-        );
-      })}
-      </div>
-
       <div>
       {project?.title}
       </div>
