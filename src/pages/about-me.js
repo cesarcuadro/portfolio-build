@@ -1,5 +1,5 @@
 import Image from "next/image";
-import project from "public/project.png";
+import portrait from "public/portrait.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -15,7 +15,7 @@ export default function AboutMe() {
   return (
     <div className="space-y-4">
       <div className="flex justify-center">
-        <Image src={project} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-black"/>
+        <Image src={portrait} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-black"/>
       </div>
       
       <section className="border-2 border-black m-2 rounded-xl p-2 space-y-1">

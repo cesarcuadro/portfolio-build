@@ -21,6 +21,7 @@ const Projects = () => {
   console.log(project);
   return (
     <section className="m-2 font-serif ">
+      <div className="space-y-1">
       <h1 className="text-xl">My projects</h1>
       <button
         onClick={handleMenu}
@@ -37,6 +38,7 @@ const Projects = () => {
             </button>
           );
         })}
+      </div>
       </div>
 
       <div>{project?.title}</div>
