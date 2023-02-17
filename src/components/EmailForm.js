@@ -63,7 +63,7 @@ export const MessageForm = () => {
         <input className="w-full bg-gray-200 mb-1 pl-0.5 dark:text-black" placeholder="email@email.com" type="email" name="email" />
         <label className="border-1 border-black">Message</label>
         <textarea className="w-full bg-gray-200 mb-1 pl-0.5 dark:text-black" placeholder="Type your message here" name="message" />
-        <input className="border-2 border-black" type="submit" value="Send" />
+        <input className="border-2 border-black text-yellow-300 bg-purple-900" type="submit" value="Send" />
       </form>
     </>
   );
