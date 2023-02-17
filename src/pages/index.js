@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link';
-// import Image from 'next/image'
-// import styles from '@/styles/Home.module.css'
-
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import project from "public/project.png";
 
 export default function Home() {
   return (
@@ -13,17 +12,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="m-10 flex w-8/9 flex-row justify-between rounded-xl bg-highlight p-20">
+      <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl border-2 border-purple-700 p-20 shadow-xl">
         <div>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <h1 className='text-4xl'>Cesar's Portfolio</h1>
-            <h2 className="text-2xl">Welcome to my portfolio.</h2>
-            <p className="pt-10">test</p>
-          </div>
-          <div className="relative w-500 m-10 font-serif">
-          <Link href="/projects">My Favorite Projects:</Link>
-          </div>
+          <h1 className="text-3xl text-center">Welcome to Cesar's Portfolio</h1>
+          <p className="pt-10">
+            Experienced full stack web developer with strong problem-solving and
+            communication skills, skilled in troubleshooting from previous role
+            as a ground radio maintainer in the Marine Corps Reserves.
+          </p>
+        </div>
+
+        <div className="w-500 relative m-10 flex flex-col rounded-lg border-2 border-purple-700 pb-3 font-serif shadow-xl">
+          <Link
+            href="https://github.com/cesarcuadro/Apartment-App"
+            className="text-center"
+          >
+            My Favorite Projects:
+            <Image src={project} alt="preview of project" />
+          </Link>
+        </div>
       </main>
     </>
-  )
+  );
 }

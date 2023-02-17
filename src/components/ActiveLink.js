@@ -1,7 +1,7 @@
-import { withRouter } from 'next/router';
-import PropTypes from 'prop-types';
-import React from 'react';
-import Link from 'next/link';
+import { withRouter } from "next/router";
+import PropTypes from "prop-types";
+import React from "react";
+import Link from "next/link";
 
 const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
   const isCurrentPath = router.pathname === href || router.asPath === href;
@@ -12,29 +12,31 @@ const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
   };
 
   (function prefetchPages() {
-    if (typeof window !== 'undefined') router.prefetch(router.pathname);
+    if (typeof window !== "undefined") router.prefetch(router.pathname);
   })();
 
   const settings = {
-    theme: "light"
+    theme: "light",
   };
 
   const theme =
-    settings.theme === "light" && isLeftSideBar ? '#e65100' : '#ffeb3b';
-  const color = isCurrentPath ? theme : '';
+    settings.theme === "light" && isLeftSideBar ? "#e65100" : "#ffeb3b";
+  const color = isCurrentPath ? theme : "";
 
   return (
-    <div className='m-3'>
-    <Link
-      href={href}
-      onClick={handleClick}
-      className={`ml-20 px-2 font-serif text-2xl text-white py-1
-      ${isCurrentPath 
-        ? 'bg-slate-300 shadow-md shadow-black border-solid border-black border-2 rounded-full text-black'
-        : '' }`}
+    <div className="m-3">
+      <Link
+        href={href}
+        onClick={handleClick}
+        className={`ml-20 px-2 py-1 font-serif text-2xl text-yellow-300
+      ${
+        isCurrentPath
+          ? "rounded-full border-2 border-solid border-black bg-purple-900 text-black shadow-md shadow-black"
+          : ""
+      }`}
       >
-      {children}
-    </Link>
+        {children}
+      </Link>
     </div>
   );
 };
