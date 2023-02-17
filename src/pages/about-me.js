@@ -13,7 +13,7 @@ import { faGem } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutMe() {
   return (
-    <div className="space-y-4">
+    <div className="flex flex-col gap-1">
       <div className="flex justify-center">
         <Image src={portrait} alt="" className="rounded-full w-16 h-16 m-2 border-2 border-purple-700"/>
       </div>
