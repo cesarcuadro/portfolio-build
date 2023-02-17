@@ -40,12 +40,13 @@ const Projects = () => {
         })}
       </div>
       </div>
-
+        <section className="border-2 border-purple-700 rounded-xl bg-slate-400">
       <div>{project?.title}</div>
       <div>{project?.description}</div>
       <div>
         {project?.image && <Image src={project.image} alt="project preview" />}
       </div>
+      </section>
     </section>
   );
 };
