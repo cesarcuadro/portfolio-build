@@ -22,7 +22,7 @@ console.log(project)
   return (
     <section className="m-2 font-serif ">
       <h1 className="text-xl">My projects</h1>
-      <button onClick={handleMenu}>Choose:</button>
+      <button onClick={handleMenu} className="border-2 border-black rounded-xl text-yellow-300 bg-purple-900">Choose:</button>
 
       <div className={`flex flex-col ${menu}`}>
       {projectData?.map((project, index) => {

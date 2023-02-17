@@ -19,7 +19,7 @@ export default function AboutMe() {
       </div>
       
       <section className="border-2 border-black m-2 rounded-xl p-2">
-        <h3 className="text-xl">Technical Skills</h3>
+        <h3 className="text-xl text-center">Technical Skills</h3>
         <div className="flex justify-evenly">
           <FontAwesomeIcon icon={faReact} />
           <FontAwesomeIcon icon={faSquareJs} />
