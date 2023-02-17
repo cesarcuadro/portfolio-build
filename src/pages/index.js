@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl border-2 border-purple-700 p-20 shadow-xl">
-        <div className="bg-slate-500">
+        <div>
           <h1 className="text-4xl">Welcome to Cesar's Portfolio</h1>
           <p className="pt-10">
             Experienced full stack web developer with strong problem-solving and
