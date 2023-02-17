@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl border-2 border-purple-700 p-20 shadow-xl bg-slate-400">
         <div>
-          <h1 className="text-3xl text-center">Welcome to Cesar's Portfolio</h1>
+          <h1 className="text-3xl text-center font-lakers">Welcome to Cesar's Portfolio</h1>
           <p className="pt-10">
             Experienced full stack web developer with strong problem-solving and
             communication skills, skilled in troubleshooting from previous role
