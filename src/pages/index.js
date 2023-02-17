@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl p-20">
+      <main className="w-8/9 bg-highlight m-10 flex flex-col justify-between rounded-xl p-20 border-2 border-purple-700 shadow-xl">
         <div>
           <h1 className="text-4xl">Welcome to Cesar's Portfolio</h1>
           <p className="pt-10">
@@ -20,7 +20,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="w-500 relative m-10 font-serif border-2 border-black rounded-lg pb-3 shadow-xl flex flex-col">
+        <div className="w-500 relative m-10 font-serif border-2 border-purple-700 rounded-lg pb-3 shadow-xl flex flex-col">
           <Link href="https://github.com/cesarcuadro/Apartment-App" className="text-center">My Favorite Projects:
           <Image src={project} alt="preview of project" />
           </Link>
