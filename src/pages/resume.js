@@ -5,7 +5,7 @@ import resume2 from 'public/2.Resume.png'
 
 const Resume = () => {
   return (
-    <div className="border-2 border-black mt-12 mx-2 text-center bg-gradient-to-br shadow-gray-700 shadow-md from-slate-600 via-slate-500 to-slate-300 w-11/12 rounded-lg font-serif pb-3 text-yellow-500">
+    <div className="border-2 border-purple-700 mt-12 mx-2 text-center bg-gradient-to-br shadow-gray-700 shadow-md from-slate-600 via-slate-500 to-slate-300 w-11/12 rounded-lg font-serif pb-3 text-yellow-500">
       <a href="/cesar_cuadro_resume.pdf" target="_blank">Download as PDF
         <Image
         src={resume1}
