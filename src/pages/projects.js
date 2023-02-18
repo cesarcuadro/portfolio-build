@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <section className="m-2 font-serif ">
       <div className="space-y-1">
-      <h1 className="text-xl">My projects</h1>
+      <h1 className="text-xl font-lakers flex justify-center">My projects</h1>
       <button
         onClick={handleMenu}
         className="rounded-xl border-2 border-black bg-purple-900 text-yellow-300"
@@ -40,7 +40,7 @@ const Projects = () => {
         })}
       </div>
       </div>
-        <section className="border-2 border-purple-700 rounded-xl bg-slate-400">
+        <section className="border-2 border-yellow-500 rounded-xl bg-gradient-to-b from-purple-900 to-black">
       <div>{project?.title}</div>
       <div>{project?.description}</div>
       <div>

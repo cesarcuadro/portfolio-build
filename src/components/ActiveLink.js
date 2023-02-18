@@ -28,7 +28,7 @@ const ActiveLink = ({ router, href, isLeftSideBar = false, children }) => {
       <Link
         href={href}
         onClick={handleClick}
-        className={`ml-20 px-2 py-1 font-serif text-2xl text-yellow-300
+        className={`ml-20 px-2 py-1 font-serif text-2xl text-white
       ${
         isCurrentPath
           ? "rounded-full border-2 border-solid border-black bg-purple-900 text-black shadow-md shadow-black"

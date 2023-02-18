@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   return (
     <main className="flex flex-wrap flex-col content-center">
-      <div className="flex flex-row text-xl space-x-4">
+      <div className="flex flex-row text-xl space-x-4 mt-10">
         <div>
           <a
             href="https://www.linkedin.com/in/cesar-cuadro/"

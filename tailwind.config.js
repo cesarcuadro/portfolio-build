@@ -24,6 +24,9 @@ module.exports = {
         '5': '32px',
         '6': '48px',
       },
+      fontFamily: {
+        'lakers': ['Bodoni Moda', 'serif']
+      }
     },
   },
   plugins: [],
